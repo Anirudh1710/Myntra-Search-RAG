@@ -1,12 +1,12 @@
-# Myntra Search system using RAG
+## Search system using RAG for Myntra
 
 Creating a generative search system capable of searching a plethora of product descriptions to find and recommend appropriate choices against a user query. We are using [this Myntra dataset](https://www.kaggle.com/datasets/djagatiya/myntra-fashion-product-dataset) on Kaggle to build such a system.
 
-# Design
+## Design
 
 Here is the system design block diagram.
 
-
+![System design](./rag.jpg)
 
 We are using the data from Kaggle and uploading it on Google Drive to be further processed.
 
@@ -18,6 +18,7 @@ If data doesn't exist, we will search in the main collection and upon receiving 
 
 Finally, we will sort and rank the result and pass it to the OpenAI prompt and get the result from ChatGPT.
 
-# Implementation
+## Implementation
 
 We are using Openai, chromaDB, and sentence-transformer library to process the results. We are also using pandas for reading the data frame and processing it. The code is in the notebook file.
+
